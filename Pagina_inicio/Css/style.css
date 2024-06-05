@@ -1,0 +1,483 @@
+body {
+    font-family: 'Biryani', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/*Título*/
+h1 {
+    color: #333;
+    text-align: center;
+}
+/*Subtitulo*/
+p {
+    color: #666;
+    text-align: center;
+}
+
+hr {
+    border: none; /* Elimina el borde por defecto */
+    border-top: 1px solid black; /* Agrega una línea sólida de 1px de grosor y color negro */
+    margin: 20px 0; /* Añade espacio arriba y abajo de la línea */
+}
+
+.cursiva-roja {
+    text-align: center; /* Alineación intermedia */
+    color: red; /* Color rojo */
+    font-style: italic; /* Cursiva */
+    font-size: 18px; /* Tamaño de letra 18 */
+}
+
+.logo-container {
+    text-align: left !important;
+}
+
+.menu {
+    text-align: center; /* Centra los botones horizontalmente */
+    margin-bottom: 20px; /* Agrega espacio entre el menú y el título */
+    display: flex;
+    justify-content: space-around; /* Distribuye los botones de manera uniforme */
+    align-items: center; /* Centra verticalmente los botones */
+    background-color: #fa3838; /* Color de fondo del rectángulo */
+    padding: 10px 0; /* Espaciado interno del rectángulo */
+
+    a {
+        text-decoration: none; /* Elimina el subrayado */
+        color: inherit; /* Hereda el color del texto de su contenedor */
+    }
+    
+}
+
+.menu a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4e4e4e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu a.button:hover {
+    background-color: #a04545;
+}
+
+.container {
+    display: flex;
+    border: 1px solid #ccc; /* Borde del cuadro */
+    border-radius: 5px; /* Borde redondeado */
+    overflow: hidden; /* Evita que el contenido sobresalga del cuadro */
+    margin: 20px; /* Margen alrededor del cuadro */
+}
+
+.image-container {
+    flex: 1; /* La imagen ocupa 1/2 del ancho del contenedor */
+}
+
+.image-container img {
+    max-width: 100%; /* La imagen no sobrepasa el ancho del contenedor */
+    display: block; /* Evita el espacio adicional debajo de la imagen */
+}
+
+.text-container {
+    flex: 1; /* El texto ocupa 1/2 del ancho del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor de texto */
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.info-container {
+    display: flex; /* Cambiado a flexbox para alinear los elementos */
+    flex-direction: column; /* Coloca los elementos uno encima del otro */
+    align-items: center; /* Centra los elementos horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    border: 1px solid #ccc; /* Añade un borde alrededor del contenedor */
+    border-radius: 10px; /* Añade bordes redondeados */
+    padding: 20px; /* Agrega un espacio interno */
+    margin: 10px; /* Añade un margen externo */
+}
+
+.info-container img {
+    width: 30%; /* Modificado para que la imagen ocupe el 30% del ancho del contenedor */
+    display: block;
+    border-radius: 10px 10px 0 0; /* Solo las esquinas superiores están redondeadas */
+}
+
+
+.texto {
+    padding: 10px;
+}
+
+.texto p {
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+
+
+.extintor_1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}+
+
+
+li {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #af4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a04545;
+}
+
+/*Carrusel*/
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 auto;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.carrusel-img{
+    width: 125%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/*FIN Carrusel*/
+
+footer {
+    background-color: #3f3f3f; /* Color gris claro */
+    padding: 150px; /* Agrega espaciado alrededor del contenido del footer */
+    text-align: center; /* Centra el contenido del footer */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links a {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre los enlaces */
+}
+
+.footer-links a img {
+    width: 80px; /* Tamaño de las imágenes de las redes sociales */
+    height: auto;
+}
+
+/*cotización*/
+
+.titulo {
+    font-family: 'Biryani', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+.form-container {
+    width: 100%; /* Ajusta el ancho al 100% de su contenedor padre */
+    max-width: 600px; /* Establece un ancho máximo para el formulario */
+    margin: 20px auto; /* Centra el formulario horizontalmente y añade margen vertical */
+    padding: 20px; /* Añade padding alrededor del contenido del formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra para mejor visibilidad */
+    background-color: #fff; /* Fondo blanco para el formulario */
+}
+
+.form-group {
+    margin-bottom: 20px; /* Añade espacio entre los campos del formulario */
+    text-align: center; /* Alinea el texto al centro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type="email"],
+textarea {
+    width: 100%; /* Ajusta el ancho de los campos al 100% de su contenedor .form-group */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px; /* Establece un ancho máximo para mantener la forma del formulario manejable */
+    margin: 0 auto; /* Asegura que el input esté centrado */
+    resize: vertical; /* Permite redimensionar verticalmente el textarea */
+}
+
+button {
+    display: block;
+    margin: 20px auto; /* Centra el botón y añade margen superior e inferior */
+    padding: 10px 20px;
+    background-color: #e40909;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #bd6a6a;
+}
+
+/*Productos*/
+
+.cart-container {
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 20px; /* Espacio entre el contenido anterior y el carrito */
+}
+
+.cart-container h2 {
+    text-align: center;
+}
+
+#cart-items th, #cart-items td {
+    padding: 10px;
+    text-align: left;
+}
+
+#cart-items {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary div {
+    margin: 10px 0;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+
+.sidebar {
+    flex-basis: 25%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor de búsqueda y carrito */
+.search-cart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilo del input de búsqueda */
+.search-cart input[type="search"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 250px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-cart input[type="search"]:focus {
+    width: 300px;
+    border-color: #ff0000;
+    outline: none;
+}
+
+/* Estilo del enlace e imagen del carrito */
+.search-cart a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.search-cart img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-cart img:hover {
+    transform: scale(1.1);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    .search-cart input[type="search"] {
+        width: 200px;
+    }
+
+    .search-cart input[type="search"]:focus {
+        width: 250px;
+    }
+
+    .search-cart img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Estilos para el carrusel */
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    position: relative;
+    text-align: center; /* Alinea el contenido del carrusel al centro */
+}
+
+.carousel-item img {
+    max-width: 100%; /* Asegura que las imágenes del carrusel se ajusten al contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
