@@ -1,4 +1,5 @@
 <?php
+// comentario de prueba para probar committ
 // Conexión a la base de datos
 $host = 'localhost';  // Dirección del servidor de MySQL
 $db = 'formulario login-register';  // Nombre de tu base de datos
